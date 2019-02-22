@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mainTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_settings_black_48" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabSwipe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_people_black_48" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/tabChat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/baseline_message_black_48" />
+    </android.support.design.widget.TabLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:elevation="20dp"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/rejectBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/ic_cancel" />
+
+        <ImageButton
+            android:id="@+id/acceptBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="30dp"
+
+            android:background="@drawable/ic_chat" />
+
+        <ImageButton
+            android:id="@+id/undoBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="30dp"
+            android:background="@android:drawable/ic_menu_revert" />
+    </LinearLayout>
+
+    <com.mindorks.placeholderview.SwipeDirectionalView
+        android:id="@+id/swipeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+    </com.mindorks.placeholderview.SwipeDirectionalView>
+
+</FrameLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/languageFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/languageConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_outline"
+        android:elevation="2dp"
+        android:visibility="visible">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="151dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:background="@color/white"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toEndOf="@+id/flagImageView"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="1.0">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/languageTxt"-->
+        <!--android:layout_width="391dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Some Useful Text Here"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textSize="14dp"-->
+        <!--android:textStyle="normal"-->
+        <!--app:layout_constraintEnd_toEndOf="@+id/profImageView"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/languageInfoTxt" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/nameAgeTxt"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="26dp"-->
+        <!--android:text="Name"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textSize="18dp"-->
+        <!--android:textStyle="bold"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/locationNameTxt"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/locationNameTxt"-->
+        <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/languageInfoTxt"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Language Info"-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textSize="18dp"-->
+        <!--android:textStyle="bold"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/languageTxt"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/languageTxt"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/locationNameTxt" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/locationNameTxt"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Location "-->
+        <!--android:textColor="@color/colorPrimaryDark"-->
+        <!--android:textSize="14dp"-->
+        <!--android:textStyle="normal"-->
+        <!--app:layout_constraintEnd_toStartOf="@+id/languageInfoTxt"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/languageInfoTxt"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/nameAgeTxt" />-->
+        <!--</LinearLayout>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/flagImageView"-->
+        <!--android:layout_width="160dp"-->
+        <!--android:layout_height="160dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:elevation="-2dp"-->
+        <!--android:scaleType="centerInside"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintVertical_bias="1.0"-->
+        <!--tools:layout_editor_absoluteX="0dp" />-->
+
+
+        <ImageView
+            android:id="@+id/profImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:scaleType="fitXY"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="182dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.272"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.984">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/round_outline"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout"
+                    android:layout_width="233dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/round_outline"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/profileFlagImageView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0">
+
+
+                    <TextView
+                        android:id="@+id/profileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Name"
+                        android:textSize="22dp"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toTopOf="@+id/profileRatingBar"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.496"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <TextView
+                        android:id="@+id/profileLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Location"
+                        android:visibility="visible"
+                        app:layout_constraintBottom_toBottomOf="@+id/profileFlagImageView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.496"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/profileRatingBar"
+                        app:layout_constraintVertical_bias="0.064" />
+
+                    <RatingBar
+                        android:id="@+id/profileRatingBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:id="@+id/profileLearningLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="8dp"
+                        android:orientation="horizontal">
+
+                        <include
+                            android:id="@+id/lang1Learn"
+                            layout="@layout/flag_level"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"></include>
+
+                        <include
+                            android:id="@+id/lang2Learn"
+                            layout="@layout/flag_level"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"></include>
+
+                        <include
+                            android:id="@+id/lang3Learn"
+                            layout="@layout/flag_level"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"></include>
+
+                        <include
+                            android:id="@+id/lang4Learn"
+                            layout="@layout/flag_level"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="1"></include>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/profileFlagImageView"
+                    android:layout_width="127dp"
+                    android:layout_height="123dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:alpha="0.75"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.666"
+                    app:srcCompat="@drawable/brazil" />
+
+                <include
+                    android:id="@+id/nativeLang"
+                    layout="@layout/flag_level"
+                    android:layout_width="113dp"
+                    android:layout_height="116dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_weight="1"
+                    android:alpha="0.75"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/profileFlagImageView"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.666"></include>
+
+            </android.support.constraint.ConstraintLayout>
+        </FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>
